@@ -2,27 +2,21 @@ import streamlit as st
 from openpyxl import load_workbook
 from io import BytesIO
 from datetime import datetime
-import requests
 from helpers import *
 
 # Set page configuration
 st.set_page_config(page_title="PIT Combiner", page_icon=":house:", layout="wide")
+
 
 # Function to load and sum the data
 def load_and_sum(hmis_stream, non_hmis_stream, range_specs, sheet_names):
     # Load workbooks from file streams
     hmis_wb = load_workbook(filename=BytesIO(hmis_stream.read()))
     non_hmis_wb = load_workbook(filename=BytesIO(non_hmis_stream.read()))
-
-    # URL of the template file in the GitHub repository
-    template_url = 'https://github.com/HNemrawi/PIT-Combiner/raw/main/template.xlsx'
-
-    # Fetch the template file from GitHub
-    response = requests.get(template_url)
-    response.raise_for_status()  # Ensure the request was successful
-
-    # Load the template workbook
-    template_wb = load_workbook(filename=BytesIO(response.content))
+    
+    # Use a template file from the local directory
+    with open("template.xlsx", "rb") as template_file:
+        template_wb = load_workbook(filename=BytesIO(template_file.read()))
 
     # Processing logic
     for source_ranges, target_sheet_name, target_col, target_start_row, target_end_row in range_specs:
