@@ -3,3 +3,4 @@ numpy == 1.26.1
 streamlit
 IPython == 8.17.2
 openpyxl == 3.1.2
+pytz

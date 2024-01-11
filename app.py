@@ -2,11 +2,17 @@ import streamlit as st
 from openpyxl import load_workbook
 from io import BytesIO
 from datetime import datetime
+import pytz
 from helpers import *
 
 # Set page configuration
 st.set_page_config(page_title="PIT Combiner", page_icon=":house:", layout="wide")
 
+def get_current_time(timezone):
+    return datetime.now(pytz.timezone(timezone)).strftime('%Y-%m-%d_%H-%M-%S')
+
+timezone = "America/Chicago"
+current_time = get_current_time(timezone)
 
 # Function to load and sum the data
 def load_and_sum(hmis_stream, non_hmis_stream, range_specs, sheet_names):
@@ -50,7 +56,7 @@ setup_header()
 st.warning("Upload the HMIS and Non-HMIS Excel files")
 
 # File uploaders
-hmis_file = st.file_uploader("Upload HMIS Data", type=['xlsx'])
+hmis_file = st.file_uploader("Upload HMIS Data (HUDX_230AD)", type=['xlsx'])
 non_hmis_file = st.file_uploader("Upload Non-HMIS Data", type=['xlsx'])
 
 # Button to process files
@@ -66,7 +72,7 @@ if st.button("Process Files"):
         st.download_button(
             label="Download Output File",
             data=output_bytes,
-            file_name=f"combined_data_{datetime.now().strftime('%Y%m%d-%H%M%S')}.xlsx",
+            file_name=f"combined_data_{current_time}.xlsx",
             mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
         )
     else:
