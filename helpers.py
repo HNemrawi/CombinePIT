@@ -61,7 +61,7 @@ range_specs = [
 #Households without Children
     
     # ES
-    ([('Without Children', 'C', 12, 19), ('HDX_TOTAL', 'C', 53, 59)], 'All Households', 'B', 53, 60),
+    ([('Without Children', 'C', 12, 19), ('HDX_TOTAL', 'C', 52, 59)], 'All Households', 'B', 53, 60),
     # Gender (adults and children)
     ([('Without Children', 'C', 21, 28), ('HDX_TOTAL', 'C', 60, 67)], 'All Households', 'B', 62, 69),
     # More Than One Gender
