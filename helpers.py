@@ -34,7 +34,7 @@ range_specs = [
     # Race and Ethnicity (adults and children)
     ([('Adult-Child', 'D', 43, 57), ('HDX_TOTAL', 'C', 27, 41)], 'All Households', 'B', 30, 44),
     # Chronically Homeless
-    ([('Adult-Child', 'D', 60, 61), ('HDX_TOTAL', 'C', 42, 43)], 'All Households', 'B', 46, 47),
+    ([('Adult-Child', 'D', 59, 60), ('HDX_TOTAL', 'C', 42, 43)], 'All Households', 'B', 46, 47),
     
     # TH
     ([('Adult-Child', 'E', 16, 24), ('HDX_TOTAL', 'D', 3, 11)], 'All Households', 'C', 3, 11),
@@ -45,7 +45,7 @@ range_specs = [
     # Race and Ethnicity (adults and children)
     ([('Adult-Child', 'E', 43, 57), ('HDX_TOTAL', 'D', 27, 41)], 'All Households', 'C', 30, 44),
     # Chronically Homeless
-    ([('Adult-Child', 'E', 60, 61), ('HDX_TOTAL', 'D', 42, 43)], 'All Households', 'C', 46, 47),
+    ([('Adult-Child', 'E', 50, 60), ('HDX_TOTAL', 'D', 42, 43)], 'All Households', 'C', 46, 47),
     
     # Unsheltered
     ([('HDX_TOTAL', 'E', 3, 11)], 'All Households', 'D', 3, 11),
@@ -69,7 +69,7 @@ range_specs = [
     # Race and Ethnicity (adults and children)
     ([('Without Children', 'C', 38, 52), ('HDX_TOTAL', 'C', 75, 89)], 'All Households', 'B', 79, 93),
     # Chronically Homeless
-    ([('Without Children', 'C', 56, 56), ('HDX_TOTAL', 'C', 90, 90)], 'All Households', 'B', 95, 95),
+    ([('Without Children', 'C', 54, 54), ('HDX_TOTAL', 'C', 90, 90)], 'All Households', 'B', 95, 95),
     
     # TH
     ([('Without Children', 'D', 12, 19), ('HDX_TOTAL', 'D', 52, 59)], 'All Households', 'C', 53, 60),
@@ -80,7 +80,7 @@ range_specs = [
     # Race and Ethnicity (adults and children)
     ([('Without Children', 'D', 38, 52), ('HDX_TOTAL', 'D', 75, 89)], 'All Households', 'C', 79, 93),
     # Chronically Homeless
-    ([('Without Children', 'D', 56, 56), ('HDX_TOTAL', 'D', 90, 90)], 'All Households', 'C', 95, 95),
+    ([('Without Children', 'D', 54, 54), ('HDX_TOTAL', 'D', 90, 90)], 'All Households', 'C', 95, 95),
     
     #Unsheltered
     ([('HDX_TOTAL', 'E', 52, 59)], 'All Households', 'D', 53, 60),
@@ -104,7 +104,7 @@ range_specs = [
     # Race and Ethnicity (adults and children)
     ([('Only Children', 'C', 32, 46), ('HDX_TOTAL', 'C', 116, 130)], 'All Households', 'B', 121, 135),
     # Chronically Homeless
-    ([('Only Children', 'C', 49, 49), ('HDX_TOTAL', 'C', 131, 131)], 'All Households', 'B', 137, 137),
+    ([('Only Children', 'C', 48, 48), ('HDX_TOTAL', 'C', 131, 131)], 'All Households', 'B', 137, 137),
     
     # TH
     ([('Only Children', 'D', 12, 13), ('HDX_TOTAL', 'D', 99, 100)], 'All Households', 'C', 101, 102),
@@ -115,7 +115,7 @@ range_specs = [
     # Race and Ethnicity (adults and children)
     ([('Only Children', 'D', 32, 46), ('HDX_TOTAL', 'D', 116, 130)], 'All Households', 'C', 121, 135),
     # Chronically Homeless
-    ([('Only Children', 'D', 49, 49), ('HDX_TOTAL', 'D', 131, 131)], 'All Households', 'C', 137, 137),
+    ([('Only Children', 'D', 48, 48), ('HDX_TOTAL', 'D', 131, 131)], 'All Households', 'C', 137, 137),
     
     #Unsheltered
     ([('HDX_TOTAL', 'E', 99, 100)], 'All Households', 'D', 101, 102),
@@ -209,7 +209,7 @@ range_specs = [
     # Race and Ethnicity (adults and children)
     ([('Unaccompanied Youth', 'C', 36, 50), ('HDX_Youth', 'C', 22, 36)], 'Youth Households', 'B', 25, 39),
     # Chronically Homeless
-    ([('Unaccompanied Youth', 'C', 54, 54), ('HDX_Youth', 'C', 37, 37)], 'Youth Households', 'B', 41, 41),
+    ([('Unaccompanied Youth', 'C', 52, 52), ('HDX_Youth', 'C', 37, 37)], 'Youth Households', 'B', 41, 41),
     
     # TH
     ([('Unaccompanied Youth', 'D', 14, 17), ('HDX_Youth', 'D', 3, 6)], 'Youth Households', 'C', 3, 6),
@@ -220,7 +220,7 @@ range_specs = [
     # Race and Ethnicity (adults and children)
     ([('Unaccompanied Youth', 'D', 36, 50), ('HDX_Youth', 'D', 22, 36)], 'Youth Households', 'C', 25, 39),
     # Chronically Homeless
-    ([('Unaccompanied Youth', 'D', 54, 54), ('HDX_Youth', 'D', 37, 37)], 'Youth Households', 'C', 41, 41),
+    ([('Unaccompanied Youth', 'D', 52, 52), ('HDX_Youth', 'D', 37, 37)], 'Youth Households', 'C', 41, 41),
     
     # UNSHELTERED
     ([('HDX_Youth', 'E', 3, 6)], 'Youth Households', 'D', 3, 6),

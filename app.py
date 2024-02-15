@@ -54,6 +54,9 @@ def load_and_sum(hmis_stream, non_hmis_stream, range_specs, sheet_names):
 # Streamlit app layout
 setup_header()
 st.warning("Upload the HMIS and Non-HMIS Excel files")
+st.error("Before uploading the HUDx-230-ad file, please ensure that you delete all columns form all tabs containing data related to 'Client Doesn't Know/Prefers Not to Answer', 'missing information' or 'Number of persons missing DoB'. Otherwise, accurate results may not be obtained.")
+st.image('screenshot1.png',use_column_width=True)
+st.image('screenshot.png', caption='Screenshot for reference', use_column_width=True)
 
 # File uploaders
 hmis_file = st.file_uploader("Upload HMIS Data (HUDX_230AD)", type=['xlsx'])
